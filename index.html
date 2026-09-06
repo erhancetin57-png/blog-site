@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erhan Çetin — Front-End Geliştirici &amp; Yazar</title>
+<meta name="description" content="Erhan Çetin'in kişisel blog ve portfolyo sitesi. Front-end geliştirme, tasarım ve kariyer üzerine yazılar.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Erhan<span class="dot">.</span>Çetin</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Ana Sayfa</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="hakkimda.html">Hakkımda</a></li>
+      <li class="nav-item-dropdown">
+        <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">ISTQB Foundation <span class="caret"></span></button>
+        <div class="nav-dropdown">
+          <a href="sinavlar.html">Deneme Sınavları</a>
+          <a href="ozet.html">Konu Özeti</a>
+        </div>
+      </li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menüyü Aç" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+<div class="nav-overlay"></div>
+<nav class="mobile-panel">
+  <a href="index.html" class="active">Ana Sayfa</a>
+  <a href="blog.html">Blog</a>
+  <a href="hakkimda.html">Hakkımda</a>
+  <span class="panel-subhead">ISTQB Foundation</span>
+  <a href="sinavlar.html" class="panel-sublink">Deneme Sınavları</a>
+  <a href="ozet.html" class="panel-sublink">Konu Özeti</a>
+  <a href="iletisim.html">İletişim</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-kicker">merhaba, ben Erhan</div>
+      <h1>Arayüzler kuran, öğrendiklerini yazıya döken bir front-end geliştirici.</h1>
+      <p class="lead">7 yıldır tarayıcıda yaşayan problemleri çözüyorum. Bu site hem çalışmalarımı sergilediğim bir portfolyo hem de öğrendiklerimi paylaştığım bir günlük.</p>
+      <div class="hero-actions">
+        <a href="blog.html" class="btn btn-primary">Yazılara göz at</a>
+        <a href="iletisim.html" class="btn">Benimle iletişime geç</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <img src="https://picsum.photos/id/1005/700/875" alt="Erhan Çetin'in portresi">
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÖNE ÇIKAN YAZILAR ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Öne çıkan yazılar</h2>
+      <a href="blog.html" class="see-all">Tüm yazılar &nbsp;›</a>
+    </div>
+    <div class="post-grid featured-grid">
+
+      <article class="post-card">
+        <a href="yazi-detay.html" class="post-thumb">
+          <img src="https://picsum.photos/id/1025/900/560" alt="Modal pencere kod örneği">
+        </a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">JavaScript</span><span>·</span><span>8 dk okuma</span></div>
+          <h3><a href="yazi-detay.html">Vanilla JavaScript ile Kendi Modal Kütüphaneni Yaz</a></h3>
+          <p>Framework'e ihtiyaç duymadan, sıfırdan erişilebilir ve yeniden kullanılabilir bir modal/lightbox nasıl kurulur, adım adım anlatıyorum.</p>
+          <a href="yazi-detay.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <a href="blog.html" class="post-thumb">
+          <img src="https://picsum.photos/id/1015/700/560" alt="CSS Grid düzeni">
+        </a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">Tasarım</span><span>·</span><span>6 dk</span></div>
+          <h3><a href="blog.html">CSS Grid ile Asimetrik Düzenler Kurmak</a></h3>
+          <p>Her kartın aynı boyutta olduğu şablonlardan kurtulup Grid'in gerçek gücünü kullanmanın yolları.</p>
+          <a href="blog.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <a href="blog.html" class="post-thumb">
+          <img src="https://picsum.photos/id/1035/700/560" alt="Kariyer yolculuğu">
+        </a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">Kariyer</span><span>·</span><span>10 dk</span></div>
+          <h3><a href="blog.html">Junior'dan Kıdemliye: 5 Yılda Öğrendiklerim</a></h3>
+          <p>Kod yazmanın ötesinde, kıdem kazandıran gerçek beceriler üzerine dürüst bir değerlendirme.</p>
+          <a href="blog.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÖZGEÇMİŞ ÖZETİ ===== -->
+<section class="section section-alt">
+  <div class="container hero-grid" style="grid-template-columns: 1.1fr .9fr;">
+    <div>
+      <div class="section-head" style="border:none; padding:0; margin-bottom:1.2rem;">
+        <h2>Kısaca özgeçmişim</h2>
+      </div>
+      <p class="lead">Ankara'da yaşıyorum, uzaktan çalışan ekiplerle e-ticaret ve içerik platformları geliştiriyorum. İşimin en sevdiğim tarafı, karmaşık bir arayüz problemini herkesin anlayabileceği kadar basit bir çözüme indirgemek.</p>
+      <p>Son 3 yıldır kıdemli front-end geliştirici olarak; erişilebilirlik, performans bütçeleri ve tasarım sistemleri üzerine odaklanıyorum. Boş vakitlerimde bu blogda anlattıklarımı deniyor, denediklerimi anlatıyorum.</p>
+      <a href="hakkimda.html" class="btn" style="margin-top:.5rem;">Hakkımda daha fazlası</a>
+    </div>
+    <div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 — Günümüz</div>
+          <h4>Kıdemli Front-End Geliştirici</h4>
+          <div class="org">Lumen Yazılım</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2020 — 2023</div>
+          <h4>Front-End Geliştirici</h4>
+          <div class="org">Marka Dijital</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2018 — 2020</div>
+          <h4>Junior Web Geliştirici</h4>
+          <div class="org">Atlas Ajans</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SON PROJELER ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Son projeler</h2>
+      <a href="hakkimda.html" class="see-all">Hepsini gör &nbsp;›</a>
+    </div>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <a href="#" class="project-thumb" data-lightbox data-caption="Envanto — stok takip paneli">
+          <img src="https://picsum.photos/id/119/800/450" alt="Envanto stok takip paneli ekran görüntüsü">
+        </a>
+        <div class="project-body">
+          <h3>Envanto — Stok Takip Paneli</h3>
+          <p>Küçük işletmeler için gerçek zamanlı stok ve sipariş takip arayüzü.</p>
+          <div class="project-stack"><span>Vanilla JS</span><span>CSS Grid</span><span>WebSocket</span></div>
+          <div class="project-links">
+            <a href="#">Canlı önizleme ↗</a>
+            <a href="#">Kaynak kod ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <a href="#" class="project-thumb" data-lightbox data-caption="Notaro — minimal not alma uygulaması">
+          <img src="https://picsum.photos/id/180/800/450" alt="Notaro not alma uygulaması ekran görüntüsü">
+        </a>
+        <div class="project-body">
+          <h3>Notaro — Minimal Not Uygulaması</h3>
+          <p>Dikkat dağıtmayan, klavye kısayollarıyla yönetilen bir not alma aracı.</p>
+          <div class="project-stack"><span>HTML5</span><span>LocalStorage</span><span>A11y</span></div>
+          <div class="project-links">
+            <a href="#">Canlı önizleme ↗</a>
+            <a href="#">Kaynak kod ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">Erhan<span class="dot">.</span>Çetin</div>
+        <p>Front-end geliştirici ve yazar. Arayüzler kurar, öğrendiklerini burada yazıya döker.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="blog.html">Blog</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="sinavlar.html">Deneme Sınavları</a>
+        <a href="ozet.html">Konu Özeti</a>
+        <a href="iletisim.html">İletişim</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kaynaklar</h4>
+        <a href="hakkimda.html">CV İndir</a>
+        <a href="blog.html">Tüm Yazılar</a>
+        <a href="iletisim.html">Birlikte Çalışalım</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Erhan Çetin. Tüm hakları saklıdır.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.36-3.37-1.36-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.11V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"/></svg></a>
+        <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 3H21l-6.54 7.47L22 21h-6.18l-4.84-6.32L5.4 21H2.63l7-8.01L2 3h6.34l4.38 5.79L18.24 3Zm-1.08 16.2h1.53L7.9 4.72H6.26L17.16 19.2Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

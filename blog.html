@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Erhan Çetin</title>
+<meta name="description" content="Front-end geliştirme, tasarım, performans ve kariyer üzerine yazılar.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Erhan<span class="dot">.</span>Çetin</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="hakkimda.html">Hakkımda</a></li>
+      <li class="nav-item-dropdown">
+        <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">ISTQB Foundation <span class="caret"></span></button>
+        <div class="nav-dropdown">
+          <a href="sinavlar.html">Deneme Sınavları</a>
+          <a href="ozet.html">Konu Özeti</a>
+        </div>
+      </li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menüyü Aç" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+<div class="nav-overlay"></div>
+<nav class="mobile-panel">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="blog.html" class="active">Blog</a>
+  <a href="hakkimda.html">Hakkımda</a>
+  <span class="panel-subhead">ISTQB Foundation</span>
+  <a href="sinavlar.html" class="panel-sublink">Deneme Sınavları</a>
+  <a href="ozet.html" class="panel-sublink">Konu Özeti</a>
+  <a href="iletisim.html">İletişim</a>
+</nav>
+
+<!-- ===== SAYFA BAŞLIĞI ===== -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Blog</h1>
+    <p class="lead">Front-end geliştirme, tasarım kararları ve kariyer üzerine yazdıklarım. Aramak ya da kategoriye göre süzmek için aşağıdaki araçları kullanabilirsin.</p>
+  </div>
+</section>
+
+<!-- ===== BLOG LİSTESİ ===== -->
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+
+    <div class="blog-toolbar">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="blog-search" placeholder="Yazılarda ara...">
+      </div>
+      <div class="filter-tags">
+        <button class="active" data-filter="all">Tümü</button>
+        <button data-filter="css">CSS</button>
+        <button data-filter="javascript">JavaScript</button>
+        <button data-filter="tasarim">Tasarım</button>
+        <button data-filter="performans">Performans</button>
+        <button data-filter="erisilebilirlik">Erişilebilirlik</button>
+        <button data-filter="kariyer">Kariyer</button>
+      </div>
+    </div>
+
+    <div class="post-grid">
+
+      <article class="post-card" data-post-card data-category="css" data-title="Modern CSS ile Karanlık Tema Kurulumu" data-excerpt="CSS değişkenleri ve prefers-color-scheme ile sağlam bir karanlık tema altyapısı">
+        <a href="yazi-detay.html" class="post-thumb"><img src="https://picsum.photos/id/1074/700/560" alt="Karanlık tema arayüz örneği"></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">CSS</span><span>·</span><span>9 dk</span></div>
+          <h3><a href="yazi-detay.html">Modern CSS ile Karanlık Tema Kurulumu</a></h3>
+          <p>CSS değişkenleri ve <code>prefers-color-scheme</code> ile bakımı kolay, sağlam bir karanlık tema altyapısı nasıl kurulur.</p>
+          <a href="yazi-detay.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-post-card data-category="javascript" data-title="Vanilla JavaScript ile Kendi Modal Kütüphaneni Yaz" data-excerpt="Framework olmadan erişilebilir bir modal ve lightbox kurmak">
+        <a href="yazi-detay.html" class="post-thumb"><img src="https://picsum.photos/id/1025/700/560" alt="Modal pencere kod örneği"></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">JavaScript</span><span>·</span><span>8 dk</span></div>
+          <h3><a href="yazi-detay.html">Vanilla JavaScript ile Kendi Modal Kütüphaneni Yaz</a></h3>
+          <p>Framework'e ihtiyaç duymadan, sıfırdan erişilebilir ve yeniden kullanılabilir bir modal/lightbox kurulumu.</p>
+          <a href="yazi-detay.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-post-card data-category="tasarim" data-title="CSS Grid ile Asimetrik Düzenler Kurmak" data-excerpt="Grid'in gerçek gücünü kullanarak tek tip kart şablonlarından kurtulmak">
+        <a href="blog.html" class="post-thumb"><img src="https://picsum.photos/id/1015/700/560" alt="CSS Grid düzeni"></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">Tasarım</span><span>·</span><span>6 dk</span></div>
+          <h3><a href="blog.html">CSS Grid ile Asimetrik Düzenler Kurmak</a></h3>
+          <p>Her kartın aynı boyutta olduğu şablonlardan kurtulup Grid'in gerçek gücünü kullanmanın yolları.</p>
+          <a href="blog.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-post-card data-category="kariyer" data-title="Junior'dan Kıdemliye: 5 Yılda Öğrendiklerim" data-excerpt="Kod yazmanın ötesinde kıdem kazandıran gerçek beceriler">
+        <a href="blog.html" class="post-thumb"><img src="https://picsum.photos/id/1035/700/560" alt="Kariyer yolculuğu"></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">Kariyer</span><span>·</span><span>10 dk</span></div>
+          <h3><a href="blog.html">Junior'dan Kıdemliye: 5 Yılda Öğrendiklerim</a></h3>
+          <p>Kod yazmanın ötesinde, kıdem kazandıran gerçek beceriler üzerine dürüst bir değerlendirme.</p>
+          <a href="blog.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-post-card data-category="performans" data-title="Web Performansında Gözden Kaçan 7 Detay" data-excerpt="Lighthouse puanının ötesinde gerçek kullanıcı deneyimini yavaşlatan detaylar">
+        <a href="blog.html" class="post-thumb"><img src="https://picsum.photos/id/1045/700/560" alt="Performans grafikleri"></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">Performans</span><span>·</span><span>7 dk</span></div>
+          <h3><a href="blog.html">Web Performansında Gözden Kaçan 7 Detay</a></h3>
+          <p>Lighthouse puanının ötesinde, gerçek kullanıcı deneyimini yavaşlatan küçük ama etkili detaylar.</p>
+          <a href="blog.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-post-card data-category="erisilebilirlik" data-title="Erişilebilir Formlar Nasıl Tasarlanır" data-excerpt="Klavye ve ekran okuyucu kullanıcıları için sağlam form deneyimi">
+        <a href="blog.html" class="post-thumb"><img src="https://picsum.photos/id/1055/700/560" alt="Form tasarımı örneği"></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">Erişilebilirlik</span><span>·</span><span>5 dk</span></div>
+          <h3><a href="blog.html">Erişilebilir Formlar Nasıl Tasarlanır</a></h3>
+          <p>Klavye ve ekran okuyucu kullanıcıları dışarıda bırakmayan sağlam form deneyimi tasarlamanın kuralları.</p>
+          <a href="blog.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-post-card data-category="tasarim" data-title="Tipografi: Web'de Okunabilirliğin Sırrı" data-excerpt="Satır uzunluğu, satır yüksekliği ve tip ölçeği üzerine">
+        <a href="blog.html" class="post-thumb"><img src="https://picsum.photos/id/1060/700/560" alt="Tipografi örnekleri"></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">Tasarım</span><span>·</span><span>6 dk</span></div>
+          <h3><a href="blog.html">Tipografi: Web'de Okunabilirliğin Sırrı</a></h3>
+          <p>Satır uzunluğu, satır yüksekliği ve tip ölçeği kararlarının okuma deneyimini nasıl değiştirdiği.</p>
+          <a href="blog.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-post-card data-category="javascript" data-title="State Yönetimini Framework'süz Çözmek" data-excerpt="Küçük ve orta ölçekli projelerde basit bir gözlemci deseniyle state yönetimi">
+        <a href="blog.html" class="post-thumb"><img src="https://picsum.photos/id/1080/700/560" alt="State yönetimi diyagramı"></a>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-tag">JavaScript</span><span>·</span><span>11 dk</span></div>
+          <h3><a href="blog.html">State Yönetimini Framework'süz Çözmek</a></h3>
+          <p>Küçük ve orta ölçekli projelerde basit bir gözlemci deseniyle state yönetimi nasıl kurulur.</p>
+          <a href="blog.html" class="read-more">Yazıyı oku →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="no-results">Aramanla eşleşen bir yazı bulunamadı.</p>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">Erhan<span class="dot">.</span>Çetin</div>
+        <p>Front-end geliştirici ve yazar. Arayüzler kurar, öğrendiklerini burada yazıya döker.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="blog.html">Blog</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="sinavlar.html">Deneme Sınavları</a>
+        <a href="ozet.html">Konu Özeti</a>
+        <a href="iletisim.html">İletişim</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kaynaklar</h4>
+        <a href="hakkimda.html">CV İndir</a>
+        <a href="blog.html">Tüm Yazılar</a>
+        <a href="iletisim.html">Birlikte Çalışalım</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Erhan Çetin. Tüm hakları saklıdır.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.36-3.37-1.36-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.11V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"/></svg></a>
+        <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 3H21l-6.54 7.47L22 21h-6.18l-4.84-6.32L5.4 21H2.63l7-8.01L2 3h6.34l4.38 5.79L18.24 3Zm-1.08 16.2h1.53L7.9 4.72H6.26L17.16 19.2Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

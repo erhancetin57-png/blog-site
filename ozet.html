@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISTQB Konu Özeti — Erhan Çetin</title>
+<meta name="description" content="ISTQB Foundation Level (CTFL) sınavı için can alıcı konuların sade ve kısa özeti. Sesli tekrar için de uygundur.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Erhan<span class="dot">.</span>Çetin</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="hakkimda.html">Hakkımda</a></li>
+      <li class="nav-item-dropdown">
+        <button type="button" class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">ISTQB Foundation <span class="caret"></span></button>
+        <div class="nav-dropdown">
+          <a href="sinavlar.html">Deneme Sınavları</a>
+          <a href="ozet.html" class="active">Konu Özeti</a>
+        </div>
+      </li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menüyü Aç" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+<div class="nav-overlay"></div>
+<nav class="mobile-panel">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="blog.html">Blog</a>
+  <a href="hakkimda.html">Hakkımda</a>
+  <span class="panel-subhead">ISTQB Foundation</span>
+  <a href="sinavlar.html" class="panel-sublink">Deneme Sınavları</a>
+  <a href="ozet.html" class="panel-sublink active">Konu Özeti</a>
+  <a href="iletisim.html">İletişim</a>
+</nav>
+
+<!-- ===== SAYFA BAŞLIĞI ===== -->
+<section class="page-hero">
+  <div class="container">
+    <h1>ISTQB Konu Özeti</h1>
+    <p class="lead">ISTQB Foundation Level (CTFL) sınavına girecekler için can alıcı konuların sade ve kısa özeti. Kısa cümleler ve net başlıklar içerir; sesli okuma araçlarıyla dinleyerek tekrar etmek için de uygundur.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:24px;">
+  <div class="container">
+    <div class="article-body" style="max-width:74ch;">
+
+      <div class="ozet-intro">
+        <p>Bu özet 6 ana konuyu kapsar: Test Etmenin Temelleri, Yazılım Yaşam Döngüsü Boyunca Test, Statik Test, Test Teknikleri, Test Faaliyetlerinin Yönetimi ve Araç Desteği. Sınavlara hazırlanmadan önce bu sayfayı okuyup tekrar tekrar gözden geçirmen önerilir.</p>
+      </div>
+
+      <div class="ozet-toc">
+      <a href="#test-etmenin-temelleri">BÖLÜM 1: TEST ETMENİN TEMELLERİ</a>
+      <a href="#yazilim-yasam-dongusu-boyunca-test">BÖLÜM 2: YAZILIM YAŞAM DÖNGÜSÜ BOYUNCA TEST</a>
+      <a href="#statik-test">BÖLÜM 3: STATİK TEST</a>
+      <a href="#test-teknikleri">BÖLÜM 4: TEST TEKNİKLERİ</a>
+      <a href="#test-faaliyetlerinin-yonetimi">BÖLÜM 5: TEST FAALİYETLERİNİN YÖNETİMİ</a>
+      <a href="#arac-destegi">BÖLÜM 6: ARAÇ DESTEĞİ</a>
+      </div>
+
+    <h2 class="ozet-chapter" id="test-etmenin-temelleri">BÖLÜM 1: TEST ETMENİN TEMELLERİ</h2>
+    <h3 class="ozet-sub">Test Etme Nedir</h3>
+    <p>Test etme, bir yazılımı çalıştırarak ya da inceleyerek içindeki kusurları bulma işidir.</p>
+    <p>Amaç sadece hata bulmak değildir. Amaç, yazılımın gereksinimleri karşıladığına dair güven vermektir.</p>
+    <p>Test etme ile hata ayıklama farklıdır. Test etme kusuru bulur. Hata ayıklama ise bulunan kusurun nedenini bulup düzeltir.</p>
+    <h3 class="ozet-sub">Hata, Kusur ve Arıza</h3>
+    <p>Bir insan yanlış bir şey yaparsa buna hata denir.</p>
+    <p>Bu hata kodun içine yerleşirse buna kusur denir.</p>
+    <p>Kusurlu kod çalıştırıldığında sorun ortaya çıkarsa buna arıza denir.</p>
+    <p>Yani sıralama şöyledir: önce hata, sonra kusur, sonra arıza.</p>
+    <h3 class="ozet-sub">Yedi Test Prensibi</h3>
+    <p>Birinci prensip: Test etme kusurların var olduğunu gösterir, ama kusur olmadığını asla kanıtlayamaz.</p>
+    <p>İkinci prensip: Her şeyi test etmek imkansızdır. Zaman ve kaynak her zaman sınırlıdır.</p>
+    <p>Üçüncü prensip: Erken test etmek zaman ve para kazandırır. Kusur ne kadar geç bulunursa o kadar pahalıya mal olur.</p>
+    <p>Dördüncü prensip: Kusurlar belirli bölgelerde kümelenir. Bazı modüllerde diğerlerinden çok daha fazla kusur çıkar.</p>
+    <p>Beşinci prensip: Pestisit paradoksu. Aynı testleri sürekli tekrarlarsanız zamanla yeni kusur bulamaz olursunuz. Testleri güncellemek gerekir.</p>
+    <p>Altıncı prensip: Test etme bağlama göre değişir. Bir bankacılık uygulamasını test etmek ile bir oyunu test etmek aynı şekilde yapılmaz.</p>
+    <p>Yedinci prensip: Hataların yokluğu yanılgısı. Bütün kusurları düzeltseniz bile, yazılım kullanıcının gerçek ihtiyacını karşılamıyorsa yine başarısız olur.</p>
+    <h3 class="ozet-sub">Test Süreci</h3>
+    <p>Test süreci yedi adımdan oluşur: planlama, izleme ve kontrol, analiz, tasarım, uygulama, yürütme ve tamamlama.</p>
+    <p>Planlama aşamasında ne test edileceğine ve nasıl test edileceğine karar verilir.</p>
+    <p>Analiz aşamasında test edilecek koşullar belirlenir.</p>
+    <p>Tasarım aşamasında bu koşullardan somut test senaryoları yazılır.</p>
+    <p>Uygulama aşamasında test senaryoları çalıştırılabilir hale getirilir ve ortam hazırlanır.</p>
+    <p>Yürütme aşamasında testler gerçekten çalıştırılır ve sonuçlar kaydedilir.</p>
+    <p>Tamamlama aşamasında öğrenilen dersler kayıt altına alınır ve süreç kapatılır.</p>
+    <h3 class="ozet-sub">Önemli Kavramlar</h3>
+    <p>Test basisi, testlerin üzerine kurulduğu kaynaktır. Gereksinimler, tasarım dokümanları buna örnektir.</p>
+    <p>Test oracle, beklenen sonucun ne olması gerektiğini söyleyen kaynaktır.</p>
+    <p>Test edilebilirlik, bir sistemin ne kadar kolay test edilebildiğini ifade eder.</p>
+    <h3 class="ozet-sub">Test Uzmanının Bağımsızlığı</h3>
+    <p>Kodu yazan kişi kendi kodundaki hataları görmekte zorlanır.</p>
+    <p>Bu yüzden bağımsız bir kişi veya ekip tarafından test edilmesi daha fazla kusur bulunmasını sağlar.</p>
+    <p>En yüksek bağımsızlık, organizasyon dışından gelen bağımsız bir test ekibidir.</p>
+    <h2 class="ozet-chapter" id="yazilim-yasam-dongusu-boyunca-test">BÖLÜM 2: YAZILIM YAŞAM DÖNGÜSÜ BOYUNCA TEST</h2>
+    <h3 class="ozet-sub">Geliştirme Modelleri</h3>
+    <p>Şelale modelinde aşamalar sırayla ilerler. Önce gereksinim, sonra tasarım, sonra kodlama, sonra test.</p>
+    <p>Çevik modellerde ise geliştirme ve test iç içedir. Kısa döngüler halinde sürekli test edilir.</p>
+    <h3 class="ozet-sub">Dört Test Seviyesi</h3>
+    <p>Birim testi, tek bir kod parçasının izole şekilde test edilmesidir. Genellikle geliştirici yapar.</p>
+    <p>Entegrasyon testi, farklı bileşenlerin bir araya geldiğinde birlikte doğru çalışıp çalışmadığını kontrol eder.</p>
+    <p>Sistem testi, sistemin bütün olarak, uçtan uca test edilmesidir.</p>
+    <p>Kabul testi, sistemin kullanıcının gerçek ihtiyacını karşıladığını doğrulamak için yapılır.</p>
+    <h3 class="ozet-sub">Test Türleri</h3>
+    <p>Fonksiyonel test, sistemin ne yaptığını test eder.</p>
+    <p>Fonksiyonel olmayan test, sistemin ne kadar hızlı, ne kadar güvenli, ne kadar kullanışlı olduğunu test eder.</p>
+    <p>Yapısal test, kodun iç yapısına bakarak yapılan testtir.</p>
+    <p>Değişiklikle ilgili testler ikiye ayrılır. Doğrulama testi, düzeltilen bir kusurun gerçekten düzelip düzelmediğine bakar. Regresyon testi ise yapılan değişikliğin başka yerlerde yeni sorun yaratıp yaratmadığına bakar.</p>
+    <h3 class="ozet-sub">Bakım Testi</h3>
+    <p>Yazılım yayına çıktıktan sonra da değişebilir. Güncelleme, taşıma veya sistemin kapatılması gibi durumlarda bakım testi yapılır.</p>
+    <h2 class="ozet-chapter" id="statik-test">BÖLÜM 3: STATİK TEST</h2>
+    <h3 class="ozet-sub">Statik Test Nedir</h3>
+    <p>Statik testte kod çalıştırılmaz. Doküman veya kod sadece okunarak, incelenerek kusur aranır.</p>
+    <p>Dinamik testte ise yazılım gerçekten çalıştırılır.</p>
+    <p>Statik testin avantajı, kusurları çok erken, kod çalıştırılmadan önce bulabilmesidir.</p>
+    <h3 class="ozet-sub">Gözden Geçirme Türleri</h3>
+    <p>Gayri resmi gözden geçirme, en basit ve en az kural içeren türdür.</p>
+    <p>Yürüyüş, yazarın kendi iş ürününü sunduğu, daha rahat bir gözden geçirmedir.</p>
+    <p>Teknik gözden geçirme, teknik uzmanların katıldığı, kararların tartışıldığı bir gözden geçirmedir.</p>
+    <p>İnceleme, en resmi ve en kuralcı gözden geçirme türüdür. Roller nettir, kayıt tutulur.</p>
+    <h3 class="ozet-sub">Gözden Geçirmedeki Roller</h3>
+    <p>Yazar, gözden geçirilen iş ürününü oluşturan kişidir.</p>
+    <p>Moderatör, toplantıyı yönetir ve tarafsızlığı sağlar.</p>
+    <p>Yazman, bulunan sorunları not eder.</p>
+    <p>Gözden geçiren kişiler, iş ürününü inceleyip sorun bulan kişilerdir.</p>
+    <p>Yönetici, gözden geçirme için zaman ve kaynak ayırır.</p>
+    <h3 class="ozet-sub">Statik Analiz</h3>
+    <p>Statik analiz, kodu bir araç yardımıyla otomatik olarak incelemektir.</p>
+    <p>Kullanılmayan değişkenler veya kod standardına aykırı yazımlar bu şekilde bulunabilir.</p>
+    <h2 class="ozet-chapter" id="test-teknikleri">BÖLÜM 4: TEST TEKNİKLERİ</h2>
+    <h3 class="ozet-sub">Siyah Kutu Teknikleri - Genel</h3>
+    <p>Siyah kutu tekniklerinde kodun içine bakılmaz. Sadece gereksinimlere ve girdilere bakılarak test tasarlanır.</p>
+    <h3 class="ozet-sub">Eşdeğerlik Sınıflandırması</h3>
+    <p>Benzer davranan girdiler gruplara ayrılır. Her gruptan sadece bir örnek test edilir.</p>
+    <p>Bu sayede her olası girdiyi tek tek denemeye gerek kalmaz.</p>
+    <h3 class="ozet-sub">Sınır Değer Analizi</h3>
+    <p>Hatalar genellikle sınırlarda çıkar. Bu yüzden bir aralığın en alt ve en üst noktaları test edilir.</p>
+    <p>Örneğin bir alan 1 ile 100 arası kabul ediyorsa; 0, 1, 100 ve 101 gibi değerler test edilir.</p>
+    <h3 class="ozet-sub">Karar Tablosu Testi</h3>
+    <p>Birden fazla koşulun birlikte farklı sonuçlar ürettiği iş kurallarını test etmek için kullanılır.</p>
+    <p>Koşullar ve bu koşullara göre ortaya çıkan sonuçlar bir tabloda birleştirilir.</p>
+    <h3 class="ozet-sub">Durum Geçiş Testi</h3>
+    <p>Sistem farklı durumlar arasında geçiş yapıyorsa bu teknik kullanılır.</p>
+    <p>Örneğin bir siparişin durumu; hazırlanıyor, kargoda, teslim edildi gibi durumlar arasında geçer.</p>
+    <p>Bu teknikte hem geçerli hem de geçersiz geçişler test edilir.</p>
+    <h3 class="ozet-sub">Kullanım Örneği Testi</h3>
+    <p>Kullanıcının sistemle olan gerçek etkileşim senaryoları test edilir.</p>
+    <p>Ana akış, normal ve beklenen yoldur. Alternatif akış ise farklı veya istisnai durumlardır.</p>
+    <h3 class="ozet-sub">Beyaz Kutu Teknikleri</h3>
+    <p>Beyaz kutu tekniklerinde kodun iç yapısına bakılır.</p>
+    <p>İfade kapsamı, kod içindeki her satırın en az bir kez çalıştırılıp çalıştırılmadığını ölçer.</p>
+    <p>Karar kapsamı, her kararın hem doğru hem yanlış sonucunun test edilip edilmediğini ölçer.</p>
+    <p>Karar kapsamı her zaman ifade kapsamından daha güçlüdür. Yani yüzde yüz karar kapsamı, yüzde yüz ifade kapsamını da garanti eder.</p>
+    <h3 class="ozet-sub">Deneyime Dayalı Teknikler</h3>
+    <p>Hata tahmini, test uzmanının geçmiş deneyimine dayanarak olası hataları tahmin etmesidir.</p>
+    <p>Keşifsel test, test tasarlama ve test çalıştırmanın aynı anda, öğrenerek yapılmasıdır.</p>
+    <p>Kontrol listesi tabanlı test, önceden hazırlanmış bir kontrol listesine göre sistemin kontrol edilmesidir.</p>
+    <h2 class="ozet-chapter" id="test-faaliyetlerinin-yonetimi">BÖLÜM 5: TEST FAALİYETLERİNİN YÖNETİMİ</h2>
+    <h3 class="ozet-sub">Test Planlama</h3>
+    <p>Test planı; kapsamı, yaklaşımı, kaynakları ve zaman çizelgesini içerir.</p>
+    <p>Giriş kriterleri, bir test faaliyetinin başlayabilmesi için gereken şartlardır.</p>
+    <p>Çıkış kriterleri ise o faaliyetin ne zaman tamamlanmış sayılacağını belirler.</p>
+    <h3 class="ozet-sub">Risk Yönetimi</h3>
+    <p>Ürün riski, yazılımın kendisiyle ilgili risktir. Örneğin bir fonksiyonun yanlış çalışması.</p>
+    <p>Proje riski ise projenin zamanında bitmemesi gibi risklerdir.</p>
+    <p>Risk tabanlı test etmede, riski yüksek olan alanlara daha çok test çabası harcanır.</p>
+    <h3 class="ozet-sub">Test İzleme ve Kontrol</h3>
+    <p>Test ilerlemesi sürekli izlenir. Planlanan ile gerçekleşen karşılaştırılır.</p>
+    <p>Sapma varsa düzeltici önlem alınır.</p>
+    <p>Test durum raporu, sürecin devam eden halini gösterir. Test özet raporu ise bir faaliyet bittiğinde hazırlanan son rapordur.</p>
+    <h3 class="ozet-sub">Yapılandırma Yönetimi</h3>
+    <p>Hangi yazılım sürümünün hangi testlerle test edildiğinin takip edilmesini sağlar.</p>
+    <p>Bu takip olmazsa hangi versiyonun test edildiği karışabilir.</p>
+    <h3 class="ozet-sub">Kusur Yönetimi</h3>
+    <p>Bir kusur raporunda; kusurun nasıl oluştuğu, beklenen sonuç, gerçekleşen sonuç ve önem derecesi yer alır.</p>
+    <p>Önem derecesi, kusurun etkisinin büyüklüğünü gösterir. Öncelik ise kusurun ne kadar hızlı çözülmesi gerektiğini gösterir. İkisi aynı şey değildir.</p>
+    <h2 class="ozet-chapter" id="arac-destegi">BÖLÜM 6: ARAÇ DESTEĞİ</h2>
+    <h3 class="ozet-sub">Test Araçları</h3>
+    <p>Test yönetim araçları, test senaryolarını ve sonuçlarını takip etmeye yarar.</p>
+    <p>Statik test araçları, kodu otomatik olarak inceler.</p>
+    <p>Test tasarım araçları, test senaryolarının oluşturulmasına yardımcı olur.</p>
+    <p>Test yürütme araçları, testleri otomatik olarak çalıştırır.</p>
+    <p>Performans araçları, sistemin yük altındaki davranışını ölçer.</p>
+    <h3 class="ozet-sub">Otomasyonun Fayda ve Riskleri</h3>
+    <p>Otomasyon, tekrar eden testlerde zaman kazandırır.</p>
+    <p>Ama otomasyon aracının kurulumu ve bakımı da zaman ve emek gerektirir.</p>
+    <p>Bu yüzden her testin otomatikleştirilmesi mantıklı değildir. Sık tekrarlanan ve kararlı testler otomasyon için daha uygundur.</p>
+
+      <a href="sinavlar.html" class="back-to-toc">Konuları pekiştirdin mi? Deneme sınavlarına geç →</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">Erhan<span class="dot">.</span>Çetin</div>
+        <p>Front-end geliştirici ve yazar. Arayüzler kurar, öğrendiklerini burada yazıya döker.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="blog.html">Blog</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="sinavlar.html">Deneme Sınavları</a>
+        <a href="ozet.html">Konu Özeti</a>
+        <a href="iletisim.html">İletişim</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kaynaklar</h4>
+        <a href="hakkimda.html#cv">CV İndir</a>
+        <a href="blog.html">Tüm Yazılar</a>
+        <a href="iletisim.html">Birlikte Çalışalım</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Erhan Çetin. Tüm hakları saklıdır.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.36-3.37-1.36-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.11V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"/></svg></a>
+        <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 3H21l-6.54 7.47L22 21h-6.18l-4.84-6.32L5.4 21H2.63l7-8.01L2 3h6.34l4.38 5.79L18.24 3Zm-1.08 16.2h1.53L7.9 4.72H6.26L17.16 19.2Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
